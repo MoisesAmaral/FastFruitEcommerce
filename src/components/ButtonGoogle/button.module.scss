@@ -1,0 +1,25 @@
+.GoogleButton{
+    width: 20rem;
+    height: 4rem;
+    border-radius: 8px;
+    border: solid 2px var(--green-800);
+    background-color: var(--green-800);
+    color: var(--gray-100);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+    margin-right:4rem;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: var(--green-300);
+    }
+
+    svg{
+        width: 2rem;
+        height: 2rem;
+        fill: var(--gray-100);
+    }
+}

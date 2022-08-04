@@ -1,0 +1,138 @@
+.header {
+  width: 100%;
+  height: 8.4rem;
+  border-bottom: solid 1px var(--green-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .HeaderConternt {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+  }
+  @media (max-width: 458px) {
+    padding: 1rem 1rem;
+  }
+  .imglogo {
+    width: 20rem;
+
+    @media (max-width: 658px) {
+      display: none;
+    }
+  }
+  .Connect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    .ConnectContent {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .UserImg {
+        width: 6rem;
+        height: 6rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        background-color: var(--green-800);
+
+        &:hover {
+          background: var(--green-300);
+        }
+
+        @media (max-width: 458px) {
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+
+          margin-right: 2rem;
+        }
+
+        img {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+
+          @media (max-width: 458px) {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+          }
+        }
+      }
+      .styles.GoogleButton {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background-color: var(--green-800);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: var(--green-700);
+        }
+      }
+      .UserInfo {
+        width: 25rem;
+        p {
+          font-size: 1.5rem;
+          font-weight: 670;
+          color: var(--gray-800);
+
+          @media (max-width: 458px) {
+            font-size: 1rem;
+          }
+          span {
+            font-size: 1.4rem;
+            font-weight: 600;
+            font-style: italic;
+            color: var(--gray-800);
+
+            @media (max-width: 458px) {
+              font-size: 1rem;
+            }
+          }
+          button {
+            width: 5rem;
+            height: 2rem;
+            border-radius: 0.5rem;
+            background-color: var(--green-800);
+            color: var(--gray-100);
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            &:hover {
+              background-color: var(--green-300);
+            }
+          }
+        }
+        small {
+          font-size: 1.1rem;
+          text-align: center;
+          font-weight: 400;
+          color: var(--gray-900);
+
+          @media (max-width: 458px) {
+            font-size: 0.8rem;
+          }
+        }
+        @media (max-width: 458px) {
+          width: 15rem;
+        }
+      }
+    }
+  }
+}

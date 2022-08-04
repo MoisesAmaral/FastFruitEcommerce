@@ -1,0 +1,106 @@
+{
+  "stock": [
+    {
+      "id": 1,
+      "amount": 3
+    },
+    {
+      "id": 2,
+      "amount": 5
+    },
+    {
+      "id": 3,
+      "amount": 2
+    },
+    {
+      "id": 4,
+      "amount": 1
+    },
+    {
+      "id": 5,
+      "amount": 5
+    },
+    {
+      "id": 6,
+      "amount": 3
+    },
+    {
+      "id": 7,
+      "amount": 5
+    },
+    {
+      "id": 8,
+      "amount": 2
+    },
+    {
+      "id": 9,
+      "amount": 1
+    },
+    {
+      "id": 10,
+      "amount": 5
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Maça Nacional Vermelha 490g (aprox. 4 Un)",
+      "price": 6.90,
+      "image": "https://i.imgur.com/UyR7DlW.png"
+    },
+    {
+      "id": 2,
+      "title": "Abacaxi Perola Un",
+      "price": 5.50,
+      "image": "https://i.imgur.com/Ld5FRcR.png"
+    },
+    {
+      "id": 3,
+      "title": "Banana Prata 600g (aprox. 6 Un)",
+      "price": 7.80,
+      "image": "https://i.imgur.com/XVn9KxL.png"
+    },
+    {
+      "id": 4,
+      "title": "Manga Tommy 850g (aprox. 2 Un)",
+      "price": 9.40,
+      "image": "https://i.imgur.com/6xmQs77.png"
+    },
+    {
+      "id": 5,
+      "title": "Pera Importada 200g (aprox. 1 Un)",
+      "price": 3.85,
+      "image": "https://i.imgur.com/YINYKpx.png"
+    },
+    {
+      "id": 10,
+      "title": "Banana Maça 700g (aprox. 6 Un)",
+      "price": 4.85,
+      "image": "https://s3.amazonaws.com/produtos.vipcommerce.com.br/250x250/9593fa59-a470-4b07-b2d2-9c1fb859ab90.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Banana Marmelo 600g (aprox. 6 Un)",
+      "price": 5.40,
+      "image": "https://s3.amazonaws.com/produtos.vipcommerce.com.br/250x250/07371f6f-f94e-4aba-b9de-32f93dc821a8.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Manga Palmer 850g (aprox. 2 Un)",
+      "price": 5.90,
+      "image": "https://s3.amazonaws.com/produtos.vipcommerce.com.br/250x250/0d816594-6e6c-491e-a8cd-df9c0d9a00d2.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Pera Red Americana 250g (aprox. 1 Un)",
+      "price": 6.80,
+      "image": "https://s3.amazonaws.com/produtos.vipcommerce.com.br/250x250/99ee48f1-b25d-40ee-8f7a-9f7b321b8725.jpg"
+    },{
+      "id": 8,
+      "title": "Maça Argentina 500g (aprox. 2 Un)",
+      "price": 7.50,
+      "image": "https://s3.amazonaws.com/produtos.vipcommerce.com.br/250x250/ea63de8b-0c9c-4666-b1fd-4dd26efb6db5.jpg"
+    }
+    
+  ]
+}
