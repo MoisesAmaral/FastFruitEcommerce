@@ -4,12 +4,12 @@ import { auth } from "../../services/firebase";
 import CartCounter from "../CartCounter/CartCounter";
 
 import { useState } from "react";
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { toast } from "react-toastify";
 
 import Logo from "../../assets/logo-fruit.png";
-import { GoogleLogo, Timer } from "phosphor-react";
+//import { GoogleLogo, Timer } from "phosphor-react";
 
 import styles from "./header.module.scss";
 import { ButtonGoogle } from "../ButtonGoogle/ButtonGoogle";
