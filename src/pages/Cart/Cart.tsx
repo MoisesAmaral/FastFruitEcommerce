@@ -13,6 +13,7 @@ import { Link} from "react-router-dom";
 import jsPDF from "jspdf";
 import { Footer } from "../../components/Footer/Footer";
 import { Key } from "phosphor-react";
+import { useEffect, useState } from "react";
 
 
 interface Product {
@@ -25,6 +26,7 @@ interface Product {
 
 export function Cart() {
   const { cart, removeProduct, updateProductAmount } = useCart();
+  const [user, setUser] = useState("");
 
   //const cartFornatted com chave key
   
@@ -33,10 +35,6 @@ export function Cart() {
     priceFormatted: formatPrice(product.price),
     subTotal: formatPrice(product.price * product.amount),
   }));
-
-
-
-
   const total = formatPrice(
     cart.reduce((sumTotal, product) => {
       return sumTotal + product.price * product.amount;
@@ -61,10 +59,10 @@ export function Cart() {
     removeProduct(productId);
   }
 
-  const userName = JSON.parse(localStorage.getItem("userName")!);
-  const userEmail = JSON.parse(localStorage.getItem("userEmail")!);
-
   const hendleCreatePdf = () => {
+    const userNamePrint = JSON.parse(localStorage.getItem("userName")!);
+    const userEmail = JSON.parse(localStorage.getItem("userEmail")!);
+
     if (localStorage.getItem("user")) {
       let doc = new jsPDF("portrait", "pt");
 
@@ -79,7 +77,7 @@ export function Cart() {
         40,
         80
       );
-      doc.text(`Cliente: ${userName} - E-mail${userEmail}`, 40, 100);
+      doc.text(`Cliente: ${userNamePrint} - E-mail${userEmail}`, 40, 100);
       doc.text(`Data da compra: ${new Date().toLocaleDateString()}`, 40, 120);
       doc.text(
         `-------------------------------------------------------------------------`,
@@ -117,10 +115,9 @@ export function Cart() {
     }
   };
 
-  const getLocalStorage = () => {
-    const userName = JSON.parse(localStorage.getItem("userName")!);
-    return userName;
-  };
+  // update user name com useState do localStorage
+
+  const handleUserName = localStorage.getItem("userName")!;
 
   return (
     <>
@@ -132,8 +129,7 @@ export function Cart() {
               Volta loja
             </Link>
             <p>
-              Cliente: <span>{getLocalStorage()}</span>, clique em finalizar
-              para imprimir seu comprovante.
+              Cliente: <span>{handleUserName ? <span>{handleUserName}, cliquem em finalizar para gerar seu comprovatnte</span> : "não logado, faça login para continuar"}</span>
             </p>
             <h2>Meu Carrinho de compras</h2>
           </header>
