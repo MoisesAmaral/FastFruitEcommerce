@@ -9,11 +9,23 @@ O **FastFruit eCommerce** é uma aplicação web que simula uma loja online de f
 ## Como executar o projeto  
 Siga as etapas abaixo para configurar e executar o projeto em ambiente local:
 
-## (Verão do node  18xx + )
+### (Versão do Node.js 18.xx ou superior)
 
 1. **Clone o repositório**:  
+   Clique no botão abaixo para copiar o link do repositório:
+
+   ```html
+   <div style="display: flex; align-items: center; gap: 8px;">
+     <input type="text" value="https://github.com/MoisesAmaral/FastFruitEcommerce.git" id="repo-link" readonly style="width: 400px; padding: 5px;">
+     <button onclick="navigator.clipboard.writeText(document.getElementById('repo-link').value)" style="padding: 5px 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+       Copiar Link
+     </button>
+   </div>
+   ```
+
+   Ou, copie manualmente:  
    ```bash
-   git clone (https://github.com/MoisesAmaral/FastFruitEcommerce.git)
+   git clone https://github.com/MoisesAmaral/FastFruitEcommerce.git
    cd fastfruit-ecommerce
    ```
 
