@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import {getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD_Xd2PkrWlBW2I6n6ZNBmgaENibxpT7L0",
+  apiKey: "Sua api aqui",
   authDomain: "fastfruit-ecommerce.firebaseapp.com",
   projectId: "fastfruit-ecommerce",
   storageBucket: "fastfruit-ecommerce.appspot.com",
