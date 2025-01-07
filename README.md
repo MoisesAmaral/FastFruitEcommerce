@@ -13,7 +13,7 @@ Siga as etapas abaixo para configurar e executar o projeto em ambiente local:
 
 1. **Clone o repositório**:  
    ```bash
-   git clone <URL_DO_REPOSITORIO>
+   git clone (https://github.com/MoisesAmaral/FastFruitEcommerce.git)
    cd fastfruit-ecommerce
    ```
 
